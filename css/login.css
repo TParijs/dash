@@ -1,0 +1,15 @@
+.bg-dark-blue{
+   
+    background: url(/img/backskye.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(42, 41, 41);
+    
+}
+

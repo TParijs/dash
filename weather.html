@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/weather.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="/js/weather.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-navdark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="../index.html">Baas</a>
+      <a class="navbar-brand text-light show-user"></a>
+      <div class="col-7"></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="/html-pages/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="/html-pages/message.html">message</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="/html-pages/support.html">support</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dashboards
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item text-light" href="#">Weather</a></li>
+              <li><a class="dropdown-item text-light" href="#">Game arcade</a></li>
+              <li><a class="dropdown-item text-light" href="#">Valuta</a></li>
+              <li><a class="dropdown-item text-light" href="#">Crypto</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+
+  <main>
+    <div class="container-md">
+      <div class="row">
+        <div class="col-2 p-3">
+          <label for="" class="form-label">
+            <h5>fill in the name of the place to see the weather for today</h5>
+          </label>
+        </div>
+        <div class="col-4 p-3">
+          <input type="text" class="form-control city-input" name="" id="" aria-describedby="helpId"
+            placeholder="Rotterdam">
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card mb-5 mx-5 bg-dark-dark text-light col-md-4">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="/img/sunnt.png" class="img-fluid change-image rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <div class="row">
+                <h5 class="col-4">date =</h5>
+                <h5 class="col-8 date-time"></h5>
+                <h5 class="col-6">temperature =</h5>
+                <h5 class="col-6 temperature"></h5>
+                <h5 class="col-7">chance of rain =</h5>
+                <h5 class="col-4 rain-chance"></h5>
+                <h5 class="col-7">amount of rain =</h5>
+                <h5 class="col-4 rain"></h5>
+                <h5 class="col-4">sunrise =</h5>
+                <h5 class="col-8 sunrise"></h5>
+                <h5 class="col-4">sunset =</h5>
+                <h5 class="col-8 sunset"></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <canvas class="chart-windspeed bg-dark"></canvas>
+      </div>
+    </div>
+
+    <div class="container-fluid py-2 scrollmenu">
+      <h2 class="font-weight-light text-light ">temperature per hour</h2>
+      <div class="d-flex flex-row flex-nowrap try-out">
+        <div class="card card-body">temp</div>
+        <div class="card card-body">temp</div>
+        <div class="card card-body">temp</div>
+        <div class="card card-body">temp</div>
+        <div class="card card-body">temp</div>
+        <div class="card card-body">temp</div>
+        <div class="card card-body">temp</div>
+      </div>
+    </div>
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

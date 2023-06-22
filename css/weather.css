@@ -1,0 +1,38 @@
+body {
+    background-color: #38618c;
+    overflow-x: hidden;
+}
+
+.bg-dark-dark {
+    background-color: #70c2bf;
+}
+
+.bg-navdark {
+    background-color: #020202;
+}
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+.card-body {
+    min-height: 200px;
+    min-width: 300px;
+    margin-right: 5px;
+    background: #70c2bf;
+    
+}

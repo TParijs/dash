@@ -1,0 +1,17 @@
+.navbar{
+    background-color: #020202; ;
+}
+
+body{
+    background-color: #38618c;
+    
+    overflow-x: hidden; 
+}
+
+.card{
+    background-color: #38618c;
+}
+
+.card-body{
+    background-color: #70c2bf;
+}
