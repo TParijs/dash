@@ -75,11 +75,11 @@ function checkKeyPressed(evt) {
                 for (let index = 0; index < meteo.hourly.temperature_2m.length; index++) {
                     const showTemp = meteo.hourly.temperature_2m[index];
                     console.log(showTemp);
-                    let weatherImg = "/img/sunnt.png";
+                    let weatherImg = "img/sunnt.png";
 
                     // Check if precipitation probability is greater than 40% to determine weather image
                     if (meteo.daily.precipitation_probability_max > 40) {
-                        weatherImg = "/img/rain.png";
+                        weatherImg = "img/rain.png";
                     }
 
                     // Format the index to include leading zeros if necessary
